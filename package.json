@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "base64-to-uint8array": "^1.0.0"
+  },
+  "name": "hello-wasm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "emcc fib.c -O1 -s WASM=1 -s SIDE_MODULE=1 -s EXPORT_ALL=1 -o fib.wasm"
+  },
+  "author": "Tuan Anh Tran <me@tuananh.org> (https://tuananh.org)",
+  "license": "MIT",
+  "description": "hello world in WebAssembly"
+}
